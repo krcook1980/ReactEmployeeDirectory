@@ -7,5 +7,8 @@ export default {
     getEmployeeSearch: function(nationality){
         return axios.get("https://randomuser.me/api/?nat=" + nationality + "&results=20")
     }
+    getOneEmployee: function(){
+        return axios.get("https://randomuser.me/api/?results=1")
+    }
 
 }
