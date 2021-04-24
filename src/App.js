@@ -1,12 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import HelloBootstrap from "./components/HelloBootstrap";
+import './index.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
-import About from "./pages/Home";
+import Main from "./pages/Main";
 import Search from "./pages/Search";
-
+import React from "react";
 
 function App() {
   return (
@@ -14,8 +12,8 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/search" component={Search} />
+          <Route  path="/" component={props => <Main {...props} />} />
+          <Route  path="/search" component={props => <Search {...props} />} />
         </Wrapper>
       </div>
     </Router>
