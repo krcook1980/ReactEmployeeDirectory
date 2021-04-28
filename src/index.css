@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://github.com/krcook1980/ReactEmployeeDirectory/blob/main/public/assets/map.jpg?raw=true");
+  background-image: url("https://github.com/krcook1980/ReactEmployeeDirectory/blob/main/public/assets/grayish.jpg?raw=true");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@ form {
 }
 
 .header{
- background-color: #A8B0BB;
+ background-color: #E5E5E5;
  color:  rgb(16, 16, 95);
  text-align: center;
  padding: 40px;
