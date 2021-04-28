@@ -5,10 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("https://github.com/krcook1980/ReactEmployeeDirectory/blob/main/public/assets/map.png.jpg");
+  background-image: url("https://github.com/krcook1980/ReactEmployeeDirectory/blob/main/public/assets/map.jpg?raw=true");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
   
 }
 
