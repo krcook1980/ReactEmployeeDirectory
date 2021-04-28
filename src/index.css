@@ -12,8 +12,12 @@ code {
     monospace;
 }
 
-.card{
-  width: 400px;
+.header{
+ background-color: aquamarine;
+ color: navy;
+ text-align: center;
+ padding: 40px;
+
 }
 
 .card-img-top {
@@ -21,4 +25,13 @@ code {
 }
 .row {
   text-align: center;
+  padding: 5px;
 }
+
+.display {
+  text-align: left;
+  border-bottom: solid;
+  border-color: gray;
+  margin-bottom: 5px;
+}
+
