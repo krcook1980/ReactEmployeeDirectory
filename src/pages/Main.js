@@ -31,29 +31,31 @@ class Main extends Component {
     componentDidMount() {
         API.getRandomEmployees()
             .then(res => {
+           
                 this.setState({
+                   
                     people: res.data.results,
                     filterPeople: res.data.results,
                 })
-
+                    
             })
             .catch(err => console.log("API CALL " + err))
     }
 
 
-    // form search input
+    // search input box
     handleInputChange = event => {
         const value = event.target.value;
         const name = event.target.name;
         this.setState({
             [name]: value
         });
-        console.log("I am value" + value)
+       
         this.filterPeople(value)
     };
 
 
-    //filter function
+    //filter function based on above input
     filterPeople = (search) => {   
         const newPeople =  this.state.filterPeople.filter(person => {  
             return (
@@ -70,15 +72,14 @@ class Main extends Component {
             })
     }
 
-    //sort by name
-    //when I click this, change order to ascending
-    sortList = (columnName, subName) => {
+    //sort by any of the headings clicked (image will sort female/male)
+       sortList = (columnName, subName) => {
         this.state.people.sort((a,b) => {
             //Use localeCompare to compare the two strings
  
-            // does it have a subName?
+            // check to see does it have a subName?
            return subName ? 
-           //check if this is a string
+           //check if this is a string (to handle sort age)
            typeof a[columnName][subName] === "string" ? 
           
            // if string and has subName
@@ -103,9 +104,10 @@ class Main extends Component {
                     handleInputChange={this.handleInputChange}
                    
                 />
-                <div className="row" >
+                <p className="text-muted text-center"> Employee information can be sorted by clicking any of the headings</p>
+                <div className="row display" >
 
-                    <div className="col-md-2">
+                    <div className="col-md-2" onClick={()=> this.sortList("gender")}>
                         <h3> Image </h3>
                     </div>
 
@@ -125,7 +127,7 @@ class Main extends Component {
                         <h3>Nationality</h3>
                     </div>
                 </div>
-
+                {/* display each person */}
                 <Row
                     people={this.state.people}
                  

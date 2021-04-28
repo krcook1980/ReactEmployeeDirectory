@@ -7,7 +7,7 @@ function Row(props) {
     <>
     {peopleArr.map((one, index) =>
         <div className="row display" key={index}>
-            <div className="col-md-2 text-center">
+            <div className="col-md-2 ">
                 <img src={one.picture.thumbnail} alt="..." />
             </div>
             <div className="col-md-2">
@@ -16,7 +16,7 @@ function Row(props) {
             <div className="col-md-3">
                 {one.location.city}, {one.location.state}
             </div>
-            <div className="col-md-2 text-center">
+            <div className="col-md-2 ">
                 {one.dob.age}
             </div>
             <div className="col-md-2 text-center">

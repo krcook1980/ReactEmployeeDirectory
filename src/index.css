@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://oldschoolgrappling.com/wp-content/uploads/2018/08/Background-opera-speeddials-community-web-simple-backgrounds.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 code {
@@ -12,20 +17,23 @@ code {
     monospace;
 }
 
+form {
+  color:  rgb(16, 16, 95);
+  font-weight: bold;
+}
+
 .header{
- background-color: aquamarine;
- color: navy;
+ background-color: #A8B0BB;
+ color:  rgb(16, 16, 95);
  text-align: center;
  padding: 40px;
 
 }
 
-.card-img-top {
-  width: 200px;
-}
 .row {
   text-align: center;
   padding: 5px;
+  color: rgb(16, 16, 95)
 }
 
 .display {
@@ -33,5 +41,7 @@ code {
   border-bottom: solid;
   border-color: gray;
   margin-bottom: 5px;
-}
+  font-weight: bold;
+ }
+
 
