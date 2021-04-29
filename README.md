@@ -5,7 +5,7 @@
    - Search employee list by first name, last name, or city
    - Sort employee list by any of the headings
 
-   [Deployed Application]("")
+   [Deployed Application]("https://krcook1980.github.io/ReactEmployeeDirectory/")
  
   ## License
    [View Full MIT License](https://opensource.org/licenses/MIT)
