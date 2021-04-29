@@ -36,5 +36,5 @@
    You can also email me questions at: kellyrcook1980@gmail.com
 
   
-  <img src="https://github.com/krcook1980/ReactEmployeeDirectory/blob/main/public/assets/src.JPG">  
+  <img src="https://github.com/krcook1980/ReactEmployeeDirectory/blob/main/public/assets/scr.JPG">  
  
